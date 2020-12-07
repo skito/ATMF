@@ -1,4 +1,5 @@
-# Advanced-Template-Markup-Format  / Culturral Made Easy
+# Advanced-Template-Markup-Format (ATMF)
+__CULTURAL MADE EASY__
 
 ## What it is?
 ATMF is HTML based format which is specially designed to simplify linking between the front and back end. It provides high availability of server-side data at template level.
