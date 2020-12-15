@@ -47,8 +47,8 @@ en/page.json
   todayDate: "Today is",
   vistorNum: "You are visitor number $0"
   others: [
-    "$0 more visitors", 
-    "One more visitor"
+    "$0 more visitors came before you", 
+    "One more visitor came before you"
   ]
 }
 
@@ -69,7 +69,21 @@ Where each action or resource is defined by its special char ``#@$/`` making tem
 
 
 ### \# System functions
-These include: ``#if`` ``#else`` ``#endif`` ``#use``
+These include: ``#if`` ``#else`` ``#endif`` ``#use`` ``template``
+
+```html
+<html>
+  <head>
+    <title>{@header.title}</title>
+  </head>
+  <body>
+    <!-- Nested templates - handle master/page views -->
+    <div>{@template header}</div>
+    <div>{@template page}</div>
+    <div>{@template footer}</div>
+  </body>
+</html>
+```
 
 ### @ Language resources
 The interpreter automatically discovers language resources target with ``@``. Translations are organized in files in special folder order:
@@ -102,24 +116,31 @@ __OR__
 
 The language resources can be also combined with ``$variables`` like: ``{@profile.name $fullName}``. This will pass ``$fullName`` value to ``@profile.name`` language resource. Multiple values in the translations can be captured by index variables ``$0``, ``$1``, ``$2`` etc..
 
-```
-theFox: "The $1 fox is making $0 steps" 
-=> {@page.theFox $steps $color}
+```html
+<!-- Translation resource -->
+theFox: "The $1 fox made $0 steps" 
+
+<!-- Usage -->
+{@page.theFox $steps $color}
 ```
 
 ATMF is easily handling the plural nouns.
 
-```
+```html
+<!-- Translation resource -->
 theFox: ["The $1 fox made $0 steps",  "The $1 fox made one step"]
-=> {@page.theFox $steps $color}
+
+<!-- Usage -->
+{@page.theFox $steps $color}
 ```
 
 This will automatically decide whether single or plural noun sentence should be used based on the first parameter. If it's number and equal to 1 then it will be single noun sentence. Anything else will evaluate to plural.
 
-```
-=> {@page.theFox 1 red} => The red fox made one step
-=> {@page.theFox 8 blue} => The blue fox made 8 steps
-=> {@page.theFox 0 green} => The green fox made 0 steps
+```html
+<!-- Usage -->
+{@page.theFox 1 red}   <!-- Output: The red fox made one step -->
+{@page.theFox 8 blue}  <!-- Output: The blue fox made 8 steps -->
+{@page.theFox 0 green} <!-- Output: The green fox made 0 steps -->
 ```
 
 ### $ Variables
