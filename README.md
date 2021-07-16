@@ -69,7 +69,7 @@ Where each action or resource is defined by its special char ``#@$/`` making tem
 
 
 ### \# System functions
-These include: ``#if`` ``#else`` ``#endif`` ``#use`` ``template``
+These include: ``#if`` ``#else`` ``#endif`` ``#use`` ``#template``
 
 ```html
 <html>
@@ -78,9 +78,9 @@ These include: ``#if`` ``#else`` ``#endif`` ``#use`` ``template``
   </head>
   <body>
     <!-- Nested templates - handle master/page views -->
-    <div>{@template header}</div>
-    <div>{@template page}</div>
-    <div>{@template footer}</div>
+    <div>{#template header}</div>
+    <div>{#template page}</div>
+    <div>{#template footer}</div>
   </body>
 </html>
 ```
