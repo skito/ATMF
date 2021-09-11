@@ -2,7 +2,7 @@
 __CULTURAL MADE EASY__
 
 ## What it is?
-ATMF is HTML based format which is specially designed to simplify linking between the front and back end. It provides high availability of server-side data at template level.
+ATMF is TEXT based format which is specially designed to simplify linking between the front and back end. It provides high availability of back end data at template level and integrates very well with HTML, CSS and other markup languages.
 
 
 ## Why is needed?
@@ -69,7 +69,7 @@ Where each action or resource is defined by its special char ``#@$/`` making tem
 
 
 ### \# System functions
-These include: ``#if`` ``#else`` ``#endif`` ``#use`` ``#template``
+These include: ``#if`` ``#else`` ``#end`` ``#use`` ``#template``
 
 ```html
 <html>
@@ -105,8 +105,8 @@ culture/
 Each language resource key is consisting of ``@path/file.key``, like ``@settings/profile.name``. It can be also combined with the ``#use`` for additional simplifying.
 
 ```
-{#use lang settings}
-{@profile.name}
+{#use lang settings/profile}
+{@name}
 ```
 __OR__
 ```
