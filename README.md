@@ -55,7 +55,7 @@ en/page.json
 ```
 
 ## What it takes?
-It just needs server-side processor and it's ready to go. Lightweight libraries to process the template files are currently underconstruction for [PHP](https://github.com/skito/ATMF), Swift, C# and Javascript.
+It just needs server-side processor and it's ready to go. Lightweight libraries to process the template files are currently underconstruction for [PHP](https://github.com/skito/ATMF-PHP), Swift, C# and Javascript.
 
 ## Go deeper...
 ATMF uses four component __SLVE (#@$/)__ syntax system.
