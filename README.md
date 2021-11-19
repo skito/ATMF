@@ -44,9 +44,9 @@ The translation:<br>
 ```json
 en/page.json
 {
-  todayDate: "Today is",
-  vistorNum: "You are visitor number $0"
-  others: [
+  "todayDate": "Today is",
+  "vistorNum": "You are visitor number $0",
+  "others": [
     "$0 more visitors came before you", 
     "One more visitor came before you"
   ]
