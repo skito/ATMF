@@ -2,7 +2,7 @@
 __CULTURAL MADE EASY__
 
 ## What it is?
-ATMF is TEXT based format which is specially designed to simplify linking between the front and back end. It provides high availability of back end data at template level and integrates very well with HTML, CSS and other markup languages.
+ATMF is extendable TEXT based format which is specially designed to simplify linking between the front and back end. It provides high availability of back end data at template level and integrates very well with HTML, CSS and other markup languages.
 
 
 ## Why is needed?
@@ -152,7 +152,7 @@ They are assigned from the back-end and can be used separately or in combination
 ```
 
 ### / Extensions
-These are third-party functions for processing the template data. Same as the system functions they accept parameters.
+These are third-party (custom) functions for processing the template data. Same as the system functions they accept parameters.
 
 ```
 {/myformat $totalCount @page.steps}
