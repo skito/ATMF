@@ -158,7 +158,7 @@ These are third-party (custom) functions for processing the template data. Same 
 
 ```
 {/myformat $totalCount @page.steps}
-{@pag.steps {/myFormat $totalCount}}
+{@page.steps {/myFormat $totalCount}}
 ```
 
 
