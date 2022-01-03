@@ -1,4 +1,4 @@
-# Advanced-Template-Markup-Format (ATMF) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=%23ATMF%20Rocks!%0A&url=https://github.com/skito/ATMF)
+# Advanced-Template-Markup-Format (ATMF) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Build%20complex%20localized%20web%20solutions%20and%20apps%20with%20%23ATMF%0A%0A&url=https://github.com/skito/ATMF)
 
 __CULTURAL MADE EASY__
 
