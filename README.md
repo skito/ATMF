@@ -72,7 +72,7 @@ Where each action or resource is defined by its special char ``#@$/`` making tem
 
 
 ### \# System functions
-These include: ``#if`` ``#else`` ``#end`` ``#use`` ``#template``
+These include: ``#if`` ``#else`` ``#end`` ``#use`` ``#template`` ``#label``
 
 ```html
 <html>
@@ -81,11 +81,34 @@ These include: ``#if`` ``#else`` ``#end`` ``#use`` ``#template``
   </head>
   <body>
     <!-- Nested templates - handle master/page views -->
-    <div>{#template header}</div>
+    <div>
+      {#if $loggedIn}
+        {#template header logged_in}
+      {#else}
+        {#template header login}
+      {#endif}
+    </div>
     <div>{#template page}</div>
     <div>{#template footer}</div>
   </body>
 </html>
+```
+
+```html
+<!-- Inside header template -->
+<!-- Label different code snippets to use them with {#template path/name label} -->
+{#label login}
+  <div>
+    <a href="/login">Login</a> or <a href="/signup">Sign up</a>
+  </div>
+{#endlabel}
+
+{#label logged_in}
+  <div>
+    <a href="/settings">Settings</a>  
+    <a href="/logout">Logout</a>
+  </div>
+{#endlabel}
 ```
 
 ### @ Language resources
