@@ -3,7 +3,7 @@
 __CULTURAL MADE EASY__
 
 ## What it is?
-ATMF is extendable format which is specially designed to simplify linking between the front and back end. It provides high availability of back end data at template level and integrates very well with HTML, CSS and other markup languages. It also gives added value to event-driven architectures by creating a live bond between controls and dynamic data.
+ATMF is extendable cross technology format which is specially designed to simplify linking between the front and back end. It provides high availability of back end data at template level and integrates very well with HTML and other markup languages. It also gives added value to event-driven architectures by creating a live bond between controls and dynamic data.
 
 
 ## Why is needed?
