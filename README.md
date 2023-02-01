@@ -1,6 +1,6 @@
 # Advanced-Template-Markup-Format (ATMF) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Build%20complex%20localized%20web%20solutions%20and%20apps%20with%20%23ATMF%0A%0A&url=https://github.com/skito/ATMF)
 
-__TEMPLATING MADE EASY__
+![Cover](cover.png)
 
 ## What it is?
 ATMF is extendable cross technology format which is specially designed to simplify linking between the front and back end. It provides high availability of back end data at template level and integrates very well with HTML and other markup languages. It also gives added value to event-driven architectures by creating a live bond between controls and dynamic data.
