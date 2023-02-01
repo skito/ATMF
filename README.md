@@ -60,8 +60,8 @@ It just needs server-side processor and it's ready to go. Lightweight libraries 
 
 [Translations manager for Windows](https://github.com/skito/ATMF-TranslationsTool-Windows) is also available.
 
-[![ATMF-PHP](atmf-php.png)](https://github.com/skito/ATMF-PHP)
-[![ATMF-JS](atmf-js.png)](https://github.com/skito/ATMF-JS)
+[![ATMF-PHP](btn-atmf-php.png)](https://github.com/skito/ATMF-PHP)
+[![ATMF-JS](btn-atmf-js.png)](https://github.com/skito/ATMF-JS)
 
 ## Go deeper...
 ATMF uses four component __SLVE (#@$/)__ syntax system.
